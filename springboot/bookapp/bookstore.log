@@ -1,0 +1,173 @@
+2025-02-01T14:03:42.504+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/books/all", parameters={}
+2025-02-01T14:03:42.506+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookapp.controller.Customlogger#getAllBooks()
+2025-02-01T14:03:42.507+05:30  INFO 7836 --- [bookapp] [http-nio-8090-exec-2] com.bookapp.controller.BookController    : Fetching all books
+2025-02-01T14:03:42.524+05:30  INFO 7836 --- [bookapp] [http-nio-8090-exec-2] com.bookapp.controller.BookController    : Book(id=1, isbn=12345, title=Book 1, category=Category 1, author=Rashid T Tahasildar, price=9.99)
+2025-02-01T14:03:42.524+05:30  INFO 7836 --- [bookapp] [http-nio-8090-exec-2] com.bookapp.controller.BookController    : Book(id=3, isbn=987654321, title=Book 2, category=Category 2, author=Author 2, price=12.99)
+2025-02-01T14:03:42.525+05:30  INFO 7836 --- [bookapp] [http-nio-8090-exec-2] com.bookapp.controller.BookController    : Book(id=4, isbn=555555555, title=Book 3, category=Category 3, author=Author 3, price=14.99)
+2025-02-01T14:03:42.537+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-02-01T14:03:42.541+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book(id=1, isbn=12345, title=Book 1, category=Category 1, author=Rashid T Tahasildar, price=9.99),  (truncated)...]
+2025-02-01T14:03:42.543+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-02-01T14:03:42.837+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2025-02-01T14:03:42.847+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:03:42.853+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:03:42.858+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:03:42.871+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-02-01T14:03:42.887+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:03:42.863176900, errorCode=5 (truncated)...]
+2025-02-01T14:03:42.895+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-01T14:03:42.896+05:30 DEBUG 7836 --- [bookapp] [http-nio-8090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:08:25.030+05:30  INFO 7836 --- [bookapp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01T14:08:25.049+05:30  INFO 7836 --- [bookapp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-01T14:08:25.056+05:30  INFO 7836 --- [bookapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:08:25.058+05:30  INFO 7836 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-01T14:08:25.071+05:30  INFO 7836 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-01T14:08:30.560+05:30  INFO 13996 --- [bookapp] [main] com.bookapp.BookappApplication           : Starting BookappApplication using Java 21.0.5 with PID 13996 (C:\Users\rashid.tahasildar\Desktop\Week3\Springassignmentdi\bookapp\target\classes started by rashid.tahasildar in C:\Users\rashid.tahasildar\Desktop\Week3\Springassignmentdi\bookapp)
+2025-02-01T14:08:30.565+05:30  INFO 13996 --- [bookapp] [main] com.bookapp.BookappApplication           : The following 1 profile is active: "prod"
+2025-02-01T14:08:31.975+05:30  INFO 13996 --- [bookapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01T14:08:32.064+05:30  INFO 13996 --- [bookapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2025-02-01T14:08:33.281+05:30  INFO 13996 --- [bookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-02-01T14:08:33.306+05:30  INFO 13996 --- [bookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-01T14:08:33.306+05:30  INFO 13996 --- [bookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01T14:08:33.402+05:30  INFO 13996 --- [bookapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-01T14:08:33.403+05:30  INFO 13996 --- [bookapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2739 ms
+2025-02-01T14:08:34.469+05:30  INFO 13996 --- [bookapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01T14:08:34.520+05:30  INFO 13996 --- [bookapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-01T14:08:34.806+05:30  INFO 13996 --- [bookapp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6eabe718
+2025-02-01T14:08:34.809+05:30  INFO 13996 --- [bookapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-01T14:08:36.100+05:30  INFO 13996 --- [bookapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:08:36.684+05:30  WARN 13996 --- [bookapp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01T14:08:37.086+05:30 DEBUG 13996 --- [bookapp] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-02-01T14:08:37.291+05:30 DEBUG 13996 --- [bookapp] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-01T14:08:37.387+05:30 DEBUG 13996 --- [bookapp] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-01T14:08:37.515+05:30 DEBUG 13996 --- [bookapp] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-01T14:08:37.925+05:30  INFO 13996 --- [bookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-02-01T14:08:37.952+05:30  INFO 13996 --- [bookapp] [main] com.bookapp.BookappApplication           : Started BookappApplication in 8.193 seconds (process running for 8.779)
+2025-02-01T14:08:42.884+05:30  INFO 13996 --- [bookapp] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-01T14:08:42.885+05:30  INFO 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-01T14:08:42.886+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-02-01T14:08:42.886+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-02-01T14:08:42.886+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-02-01T14:08:42.890+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@143900a6
+2025-02-01T14:08:42.896+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@477906cf
+2025-02-01T14:08:42.897+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-01T14:08:42.897+05:30  INFO 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2025-02-01T14:08:42.917+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/books", parameters={}
+2025-02-01T14:08:42.942+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookapp.controller.BookController#getAllBooks()
+2025-02-01T14:08:43.698+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/*+json]
+2025-02-01T14:08:43.726+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [CollectionModel { content: [EntityModel { content: Book(id=1, isbn=12345, title=Book 1, category=Cat (truncated)...]
+2025-02-01T14:08:43.841+05:30 DEBUG 13996 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-02-01T14:14:05.902+05:30  INFO 13996 --- [bookapp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01T14:14:05.929+05:30  INFO 13996 --- [bookapp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-01T14:14:05.937+05:30  INFO 13996 --- [bookapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:14:05.941+05:30  INFO 13996 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-01T14:14:05.972+05:30  INFO 13996 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-01T14:50:13.029+05:30  INFO 19616 --- [bookapp] [main] com.bookapp.BookappApplication           : Starting BookappApplication using Java 21.0.5 with PID 19616 (C:\Users\rashid.tahasildar\Desktop\Week3\Springassignmentdi\bookapp\target\classes started by rashid.tahasildar in C:\Users\rashid.tahasildar\Desktop\Week3\Springassignmentdi\bookapp)
+2025-02-01T14:50:13.032+05:30  INFO 19616 --- [bookapp] [main] com.bookapp.BookappApplication           : The following 1 profile is active: "prod"
+2025-02-01T14:50:14.538+05:30  INFO 19616 --- [bookapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01T14:50:14.666+05:30  INFO 19616 --- [bookapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2025-02-01T14:50:15.931+05:30  INFO 19616 --- [bookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-02-01T14:50:15.949+05:30  INFO 19616 --- [bookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-01T14:50:15.949+05:30  INFO 19616 --- [bookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01T14:50:16.083+05:30  INFO 19616 --- [bookapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-01T14:50:16.084+05:30  INFO 19616 --- [bookapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2972 ms
+2025-02-01T14:50:17.273+05:30  INFO 19616 --- [bookapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01T14:50:17.316+05:30  INFO 19616 --- [bookapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-01T14:50:17.562+05:30  INFO 19616 --- [bookapp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52b30054
+2025-02-01T14:50:17.567+05:30  INFO 19616 --- [bookapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-01T14:50:18.829+05:30  INFO 19616 --- [bookapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:50:19.382+05:30  WARN 19616 --- [bookapp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01T14:50:19.766+05:30 DEBUG 19616 --- [bookapp] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-02-01T14:50:20.690+05:30 DEBUG 19616 --- [bookapp] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-01T14:50:20.835+05:30 DEBUG 19616 --- [bookapp] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-01T14:50:20.991+05:30 DEBUG 19616 --- [bookapp] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-01T14:50:21.338+05:30  INFO 19616 --- [bookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-02-01T14:50:21.360+05:30  INFO 19616 --- [bookapp] [main] com.bookapp.BookappApplication           : Started BookappApplication in 9.107 seconds (process running for 9.737)
+2025-02-01T14:50:44.394+05:30  INFO 19616 --- [bookapp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01T14:50:44.415+05:30  INFO 19616 --- [bookapp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-01T14:50:44.422+05:30  INFO 19616 --- [bookapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:50:44.425+05:30  INFO 19616 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-01T14:50:44.455+05:30  INFO 19616 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-01T14:52:47.121+05:30  INFO 24596 --- [bookapp] [main] com.bookapp.BookappApplication           : Starting BookappApplication using Java 21.0.5 with PID 24596 (C:\Users\rashid.tahasildar\Desktop\Week3\Springassignmentdi\bookapp\target\classes started by rashid.tahasildar in C:\Users\rashid.tahasildar\Desktop\Week3\Springassignmentdi\bookapp)
+2025-02-01T14:52:47.124+05:30  INFO 24596 --- [bookapp] [main] com.bookapp.BookappApplication           : The following 1 profile is active: "prod"
+2025-02-01T14:52:48.893+05:30  INFO 24596 --- [bookapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01T14:52:48.979+05:30  INFO 24596 --- [bookapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2025-02-01T14:52:50.565+05:30  INFO 24596 --- [bookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-02-01T14:52:50.585+05:30  INFO 24596 --- [bookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-01T14:52:50.586+05:30  INFO 24596 --- [bookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01T14:52:50.772+05:30  INFO 24596 --- [bookapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-01T14:52:50.773+05:30  INFO 24596 --- [bookapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3572 ms
+2025-02-01T14:52:51.261+05:30 DEBUG 24596 --- [bookapp] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-02-01T14:52:52.406+05:30  INFO 24596 --- [bookapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01T14:52:52.450+05:30  INFO 24596 --- [bookapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-01T14:52:52.696+05:30  INFO 24596 --- [bookapp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e8afc2d
+2025-02-01T14:52:52.699+05:30  INFO 24596 --- [bookapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-01T14:52:54.298+05:30  INFO 24596 --- [bookapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:52:55.471+05:30  WARN 24596 --- [bookapp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01T14:52:56.160+05:30 DEBUG 24596 --- [bookapp] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-02-01T14:52:58.116+05:30 DEBUG 24596 --- [bookapp] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-01T14:52:58.370+05:30 DEBUG 24596 --- [bookapp] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-01T14:52:58.678+05:30 DEBUG 24596 --- [bookapp] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-01T14:53:00.213+05:30  INFO 24596 --- [bookapp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-02-01T14:53:00.382+05:30  INFO 24596 --- [bookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-02-01T14:53:00.407+05:30  INFO 24596 --- [bookapp] [main] com.bookapp.BookappApplication           : Started BookappApplication in 14.125 seconds (process running for 15.078)
+2025-02-01T14:53:34.935+05:30  INFO 24596 --- [bookapp] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-01T14:53:34.937+05:30  INFO 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-01T14:53:34.937+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-02-01T14:53:34.938+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-02-01T14:53:34.938+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-02-01T14:53:34.940+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@63767d
+2025-02-01T14:53:34.941+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@66e44f9f
+2025-02-01T14:53:34.941+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-01T14:53:34.941+05:30  INFO 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-02-01T14:53:34.989+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/books/actuator/health", parameters={}
+2025-02-01T14:53:35.006+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:53:35.021+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:53:35.029+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:53:35.127+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json, application/yaml]
+2025-02-01T14:53:35.156+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:53:35.035712800, errorCode=5 (truncated)...]
+2025-02-01T14:53:35.201+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/books/actuator/health.]
+2025-02-01T14:53:35.207+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:53:35.495+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2025-02-01T14:53:35.497+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:53:35.500+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:53:35.504+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:53:35.507+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-02-01T14:53:35.508+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:53:35.506217900, errorCode=5 (truncated)...]
+2025-02-01T14:53:35.518+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-01T14:53:35.518+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:55:02.335+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/actuator/health", parameters={}
+2025-02-01T14:55:02.338+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:55:02.342+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:55:02.346+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:55:02.348+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json, application/yaml]
+2025-02-01T14:55:02.349+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:55:02.346169600, errorCode=5 (truncated)...]
+2025-02-01T14:55:02.352+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/actuator/health.]
+2025-02-01T14:55:02.352+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:55:02.770+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2025-02-01T14:55:02.772+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:55:02.777+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:55:02.778+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:55:02.779+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-02-01T14:55:02.781+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:55:02.779528, errorCode=500, (truncated)...]
+2025-02-01T14:55:02.785+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-01T14:55:02.786+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:55:19.556+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/actuator/info", parameters={}
+2025-02-01T14:55:19.560+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:55:19.570+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:55:19.572+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:55:19.573+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json, application/yaml]
+2025-02-01T14:55:19.574+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:55:19.572390200, errorCode=5 (truncated)...]
+2025-02-01T14:55:19.576+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/actuator/info.]
+2025-02-01T14:55:19.577+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:55:19.708+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2025-02-01T14:55:19.710+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-01T14:55:19.715+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-02-01T14:55:19.716+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.bookapp.controller.ErrorHandler#handleException(Exception)
+2025-02-01T14:55:19.717+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-02-01T14:55:19.718+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorDetails(errorMessage=Something went wrong, timestamp=2025-02-01T14:55:19.717649900, errorCode=5 (truncated)...]
+2025-02-01T14:55:19.719+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-01T14:55:19.720+05:30 DEBUG 24596 --- [bookapp] [http-nio-8090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-01T14:56:00.262+05:30  INFO 24596 --- [bookapp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01T14:56:00.283+05:30  INFO 24596 --- [bookapp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-01T14:56:00.295+05:30  INFO 24596 --- [bookapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01T14:56:00.301+05:30  INFO 24596 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-01T14:56:00.332+05:30  INFO 24596 --- [bookapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
