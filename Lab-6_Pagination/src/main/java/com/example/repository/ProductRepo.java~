@@ -1,0 +1,38 @@
+package com.example.repository;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Integer> {
+    @Query("select p from Product p")
+    List<Product> getListOfAllProducts();
+
+
+    @Query("select p from Product p where p.name=?1")
+    List<Product> getListOfAllProductsBasedOnName(String name);
+
+    @Query("select p from Product p where p.name=:name")
+    List<Product> getListOfAllProductsBasedOnNameV2(@Param("name")  String name);
+
+
+    @Query("select p from Product p where p.name=?1 and p.price=?2")
+    List<Product> getListOfAllProductsBasedOnNameAndPrice(String name, BigDecimal price);
+
+    @Query("select p from Product p where p.name=?1 or p.price=?2")
+    List<Product> getListOfAllProductsBasedOnNameOrPrice(String name, BigDecimal price);
+
+
+    List<Product> findByName(String name);
+
+    List<Product> findByNameContaining(String name);
+    List<Product> findByNameLike(String name);
+    List<Product> findByNameStartingWith(String name);
+
+    List<Product> findByNameEndingWith(String name);
+
+    List<Product> findByNameIgnoreCase(String name);
+
+
+    List<Product> findByMfgDateAfter(LocalDate date);
+    List<Product> findByMfgDateBefore(LocalDate date);
+    List<Product> findByMfgDateBetween(LocalDate date1, LocalDate date);
+
+}
