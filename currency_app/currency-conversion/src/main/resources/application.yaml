@@ -12,3 +12,28 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8080/eureka/
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+    endpoint:
+      shutdown:
+        enabled: true
+      health:
+        enabled: true
+    info:
+      env:
+        enabled: true
+    health:
+      livenessstate:
+        enabled: true
+      readinessstate:
+        enabled: true
+    tracing:
+      sampling:
+        probability: 1.0
+    logging:
+      pattern:
+        level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
