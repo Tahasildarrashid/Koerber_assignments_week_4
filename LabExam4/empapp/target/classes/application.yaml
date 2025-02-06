@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: empapp
+server:
+  port: 8084
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+management:
+endpoints:
+  web:
+    exposure:
+      include: "*"
+endpoint:
+  shutdown:
+    enabled: true
+  health:
+    enabled: true
+info:
+  env:
+    enabled: true
+health:
+  livenessstate:
+    enabled: true
+  readinessstate:
+    enabled: true
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        permitted-number-of-calls-in-half-open-state: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 5s
