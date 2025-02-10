@@ -1,0 +1,12 @@
+package com.bookapp.service;
+
+import com.bookapp.entities.Book;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+@Service
+public interface BookService {
+    public List<Book> getAll();
+    public Book getById(int id);
+    public void delete(int id);
+}
