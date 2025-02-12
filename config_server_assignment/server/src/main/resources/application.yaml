@@ -1,0 +1,21 @@
+spring:
+  profiles:
+#    active: dev
+    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/config_server_files
+          clone-on-start: true
+  application:
+    name: "config_server"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8888
