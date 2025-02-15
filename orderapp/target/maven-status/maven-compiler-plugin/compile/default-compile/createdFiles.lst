@@ -1,0 +1,3 @@
+com\orderapp\controller\OrderController.class
+com\orderapp\service\InstanceInformationService.class
+com\orderapp\OrderappApplication.class
